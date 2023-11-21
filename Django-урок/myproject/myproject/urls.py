@@ -25,3 +25,4 @@ urlpatterns = [
 # этот обработчик-handling 404 error
 # ishlov beruvchi
 handler404 = 'errorhandler.views.error_404_view'
+handler500 = 'errorhandler.views.error_500_view'

@@ -13,4 +13,8 @@ def error_404_view(request, exception):
     # добавляем путь к файлу handler404.html
 
     
-    return render(request, 'handler404.html')
+    return render(request, 'handler404.html', status=404)
+
+
+def error_500_view(request):
+    return render(request, 'handler500.html', status=500)
